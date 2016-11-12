@@ -16,8 +16,8 @@ screen = pygame.display.set_mode((screenX, screenY))
 pygame.display.set_caption('Interactive Image')
 
 # Load the images and get the rectangles around them
-img1 = pygame.image.load('cat.png')
-img2 = pygame.image.load('cat2.png')
+img1 = pygame.image.load('cat.png').convert()
+img2 = pygame.image.load('cat2.png').convert()
 currentImg = img1
 imgRect = currentImg.get_rect()
 
